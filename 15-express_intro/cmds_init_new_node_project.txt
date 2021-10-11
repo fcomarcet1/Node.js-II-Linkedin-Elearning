@@ -1,0 +1,14 @@
+npm init
+npm install express
+create app.js
+
+// Mediante express-generator
+npm install -g express-generator
+
+// Proyecto full
+express --view=pug myapp
+
+// skeleton
+express --no-view --git myapp
+
+set DEBUG=myapp:* & npm start

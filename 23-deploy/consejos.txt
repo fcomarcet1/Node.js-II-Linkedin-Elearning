@@ -1,0 +1,14 @@
+eliminars console.log()
+eliminar dependencias dev
+eliminar node_modules
+npm install --production
+
+// optimizar recursos
+npm install compression y asignarlo como middleware
+var app = express();
+app.use(compression());
+
+añadir tiempo maximo de cache de ficheros
+let oneYear = 1 * 365 * 24 * 60 * 60 * 1000;
+app.use(express.static(path.join(__dirname, 'public') , { maxAge: oneYear }));
+
